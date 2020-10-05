@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Estudio Ferro&Roldán Asociados</title>
+  <link rel="icon" type="image/png" href="img/logo.png" sizes="16x16" />
+
+  <!-- CSS BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+  <!-- Mis CSS -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+
+  <!-- FontAwesome Símbolos -->
+  <script src="https://kit.fontawesome.com/c88ae4bd00.js" crossorigin="anonymous"></script>
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <!-- Plugin jQuery Whatsapp -->
+  <script type="text/javascript" src="js/floating-wpp.min.js"></script>
+  <link rel="stylesheet" href="css/floating-wpp.min.css">
+
+  <!-- Mis Javascripts -->
+  <script src="js/main.js"></script>
+
+</head>
+
+<body class="container-fluid p-0 m-0">
+
+  <!-- BOTON WHATSAPP -->
+  <div id="btn_whatsapp"></div>
+
+
+  <!-- CABECERA -->
+  <header id="header">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light col-12 p-1">
+      <div class="col-10 col-sm-10 container d-flex justify-content-between">
+        <a class="navbar-brand" onclick="irA('header')"><img src="img/logo.png" />Estudio Ferro&Roldán Asociados</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-right menu" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" onclick="irA('header')">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="irA('servicios')">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="irA('nosotros')">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="irA('contacto')">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <!-- JUMBOTRON INICIO -->
+
+  <div id="jumbotron-img-inicial" class="row m-0 d-flex h-100 justify-content-center">
+    <div id="logo_jumbotron" class="row align-self-center m-0">
+      <div class="col">
+        <div id="logo" class="animacionArriba"><img src="img/logo_tres.png" /></div>
+        <hr />
+        <p class="rojo animacionDerecha">Estamos para ayudarte</p>
+        <div id="btn_jumbotron" onclick="irA('contacto')">
+          HABLEMOS
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SECTION SERVICIOS -->
+  <div id="servicios" class="row m-0 justify-content-center">
+    <div class="row col-10 col-sm-10 justify-content-center h-100">
+      <h2 class="rojo text-center titulo">SERVICIOS</h2>
+    </div>
+
+    <div class="row col-10 col-sm-10 justify-content-center m-0">
+
+      <div class="col-12 col-sm-12 col-md-5 m-4">
+        <div class="logo_tarjeta"><img src="img/icono_legal.png" /></div>
+        <div class="titulo_tarjeta">
+          <h3>Legal</h3>
+        </div>
+        <div class="texto_tarjeta">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius lectus ac odio finibus
+            aliquam. In magna dui, varius non diam vitae, accumsan malesuada odio. Proin non justo in dolor aliquam
+            aliquam. Nam condimentum dignissim eros sed egestas.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-5 m-4">
+        <div class="logo_tarjeta"><img src="img/icono_penal.png" /></div>
+        <div class="titulo_tarjeta">
+          <h3>Penal</h3>
+        </div>
+        <div class="texto_tarjeta">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius lectus ac odio finibus
+            aliquam. In magna dui, varius non diam vitae, accumsan malesuada odio. Proin non justo in dolor aliquam
+            aliquam. Nam condimentum dignissim eros sed egestas.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-5 m-4">
+        <div class="logo_tarjeta"><img src="img/icono_familia.png" /></div>
+        <div class="titulo_tarjeta">
+          <h3>Familia</h3>
+        </div>
+        <div class="texto_tarjeta">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius lectus ac odio finibus
+            aliquam. In magna dui, varius non diam vitae, accumsan malesuada odio. Proin non justo in dolor aliquam
+            aliquam. Nam condimentum dignissim eros sed egestas.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-5 m-4">
+        <div class="logo_tarjeta"><img src="img/icono_laboral.png" /></div>
+        <div class="titulo_tarjeta">
+          <h3>Laboral</h3>
+        </div>
+        <div class="texto_tarjeta">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius lectus ac odio finibus
+            aliquam. In magna dui, varius non diam vitae, accumsan malesuada odio. Proin non justo in dolor aliquam
+            aliquam. Nam condimentum dignissim eros sed egestas.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SECTION NOSOTROS -->
+  <div id="nosotros" class="row m-0 p-0">
+    <div class="row col-12 col-sm-12 m-0 p-0">
+      <div class="foto-nosotros col-12 col-md-6">
+      </div>
+      <div class="texto-nosotros col-12 col-md-6">
+        <h2 class="rojo text-center titulo">NOSOTROS</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+          sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.
+
+          It is a long established fact that a reader will be distracted by the readable content of a page when
+          looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+          as
+          opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+          packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+          ipsum'
+          will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes
+          by
+          accident, sometimes on purpose (injected humour and the like).
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION CONTACTO -->
+  <div id="contacto" class="row m-0">
+    <div class="row col-12 col-sm-12 justify-content-center">
+      <h2 class="gris text-center titulo">CONTACTO</h2>
+    </div>
+    <div class="row col-12 col-sm-12 justify-content-center p-0">
+      <form id="formulario_contacto" action="form/formulario.php" method="POST">
+        <div class="form-group">
+          <input type="text" name="nombreApellido" class="form-control" placeholder="Nombre y Apellido" />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" class="form-control" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <textarea rows="5" name="mensaje" class="form-control" placeholder="Mensaje"></textarea>
+        </div>
+        <div id="btn_enviar">
+          <input type="submit" name="enviar" class="btn btn-success" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- SECTION REDES -->
+  <div id="redes" class="row m-0 justify-content-center">
+    <div class="row col-12 col-sm-3 justify-content-center">
+      <ul>
+        <li>
+          <h3>CONTACTO</h3>
+        </li>
+        <li>info@fyrasociados.com.ar</li>
+        <li>011 2163 1030</li>
+      </ul>
+    </div>
+    <div id="iconos_redes" class="row col-12 col-sm-3 justify-content-center">
+      <ul>
+        <li>
+          <h3>REDES</h3>
+        </li>
+        <li class="iconos"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer" class="row col sm-12 m-0 justify-content-center">
+    <div id="derechos" class="col-12 col-sm-12 text-center">
+      F&R Asociados - Estudio de abogados &copy; - Todos los derechos reservados - 2020
+    </div>
+    <div id="diseno" class="col-12 col-sm-12 text-center">
+      Diseñado por JAT
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

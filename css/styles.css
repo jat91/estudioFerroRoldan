@@ -1,0 +1,462 @@
+/*FUENTES*/
+@font-face{
+    font-family: "TrebuchetMS";
+    src: url(fonts/TrebuchetMS.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Boulevard";
+    src: url(fonts/buolevard.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*GENERAL*/
+*{
+    font-family: "TrebuchetMS",Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    color: #495057;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.rojo {
+    color: rgba(116, 0, 0);
+}
+
+.gris {
+    color: rgb(238, 238, 238);
+}
+
+.boulevard {
+    font-family: "Boulevard";
+    font-size: 150px !important;
+    font-weight: normal !important;
+}
+
+.font-normal-helvetica {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px !important;
+}
+
+hr {
+    display: block;
+    margin: 0px auto;
+    height: 1px;
+    /*box-shadow: 1px 1px 2px #ddd;*/
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(116, 0, 0);
+}
+
+.row{
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+.animacionArriba {    
+    animation: caeArriba 1000ms linear;
+}
+
+@keyframes caeArriba {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.animacionDerecha {    
+    animation: caeDerecha 1000ms linear;
+}
+
+@keyframes caeDerecha {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+/*HEADER*/
+#header {
+    display: block;
+    margin: 0px auto;
+}
+
+#header img {
+    height: 100%;
+    width: 30px;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+
+#header .navbar-brand {
+    font-size: 22px;
+    letter-spacing: 3px;
+    /*text-shadow: 0px 2px 1px #c2c2c2;*/
+    transition: all 300ms;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header a {
+    color: rgba(116, 0, 0);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    transform: scale(1.2);
+}
+
+.menu.show a:hover {
+    transform: none !important;
+    color: rgb(161, 0, 0) !important;
+}
+
+
+/*JUMBOTRON INICIO*/
+#jumbotron-img-inicial {
+    min-height: 100vh;
+    height: auto;
+    background-image: url(../img/bg-jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 0px;
+}
+
+
+#logo_jumbotron h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 1px #c2c2c2;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#logo_jumbotron h3{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 1px #c2c2c2;
+    font-size: 45px;
+}
+
+#logo_jumbotron p{
+    text-align: center;
+    text-transform: uppercase;
+    /*text-shadow: 0px 2px 1px #c2c2c2;*/
+    font-size: 30px;
+}
+
+#btn_jumbotron {
+    display: block;
+    margin: 0px auto;
+    width: 250px;
+    height: 30px;
+    background-color: rgba(116, 0, 0);
+    text-align: center;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms;
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+#btn_jumbotron:hover{
+    background-color: white;
+    color: rgba(116, 0, 0);
+}
+
+#logo img{
+    display: block;
+    width: auto;
+    height: 250px;
+    margin: 0px auto;
+}
+
+.animacionArriba {    
+    animation: showIcon 500ms linear;
+}
+
+@keyframes showIcon {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+
+/*SERVICIOS*/
+#servicios {
+    height: auto;
+    background-color: rgb(233, 233, 233);
+    border-radius: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.logo_tarjeta {    
+    font-size: 50px;
+    text-align: center;
+}
+
+.logo_tarjeta img {
+    height: 50px;
+    width: 50px;
+}
+
+.titulo_tarjeta {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.titulo_tarjeta h3 {
+    text-align: center;
+    color: white !important;
+    text-transform: uppercase;
+    color: rgba(116, 0, 0) !important;
+}
+
+.texto_tarjeta p{
+    text-align: center;
+}
+
+
+/*NOSOTROS*/
+#nosotros {
+    min-height: 800px;
+}
+
+.foto-nosotros {
+    background-image: url(../img/nosotros_tres.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.texto-nosotros {
+    padding: 50px;
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+.texto-nosotros h2{
+    margin-bottom: 50px;
+}
+
+.texto-nosotros p {
+    text-align: justify;
+    line-height: 30px;
+}
+
+
+/*CONTACTO*/
+#contacto {
+    color: #CCC;
+    background-image: url(../img/nosotros_uno.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 800px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#formulario_contacto {
+    width: 65%;
+}
+
+#formulario_contacto input[type="text"],
+#formulario_contacto input[type="email"],
+#formulario_contacto select,
+#formulario_contacto textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    border-radius: 0px;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 70px;
+}
+
+#formulario_contacto input[type="text"]:focus,
+#formulario_contacto input[type="email"]:focus,
+#formulario_contacto select:focus,
+#formulario_contacto textarea:focus {
+    border-bottom: 2px solid #FFF;
+    font-weight: normal;
+}
+
+input:focus,
+input.form-control:focus,
+textarea:focus,
+textarea.form-control:focus,
+select:focus,
+select.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#formulario_contacto ::placeholder{
+    color: rgb(173, 173, 173)
+}
+
+#btn_enviar {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#btn_enviar input[type="submit"]{
+    width: 150px;
+    margin-top: 35px;
+    border-radius: 100px;
+    background-color: white; 
+    border-color: transparent;
+    text-transform: uppercase;
+    transition: all 300ms;
+    border: 3px solid transparent;
+    color: rgba(116, 0, 0);
+    font-weight: bold;
+}
+
+#btn_enviar input[type="submit"]:hover{
+    background-color: transparent;
+    border: 3px solid rgba(116, 0, 0);
+    color: white;
+}
+
+.floating-wpp-button {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+
+
+/*REDES*/
+#redes{
+    background-color: rgb(49, 49, 49);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    text-align: left;
+}
+
+#redes ul {
+    list-style: none;
+    line-height: 35px;
+    font-size: 15px;
+    margin: 0px;
+    text-align: center;
+}
+
+#redes i {
+    font-size: 25px;
+}
+
+#redes h3 {
+    margin-bottom: 20px;
+}
+
+.iconos i {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#redes a {    
+    color: rgb(238, 238, 238);
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#redes a:hover {
+    color: rgb(238, 238, 238, 0.5);
+}
+
+
+/*FOOTER*/
+#footer{
+    background-color: rgb(36, 36, 36);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    text-align: left;
+}
+
+
+/*MEDIA QUERY*/
+@media (max-width: 767px){
+    .foto-nosotros {
+        height: 200px;
+    }
+    
+    #header .navbar-brand {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 560px){
+    
+    #header .navbar-brand {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    #header .navbar-brand {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .navbar-toggler {
+        display: block;
+        height: 30px;
+        padding: 0px;
+    }
+    
+    .navbar-toggler-icon {
+        height: 100%;
+    }
+}
