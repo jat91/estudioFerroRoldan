@@ -414,7 +414,9 @@ select:-webkit-autofill:focus {
     margin-left: 10px;
 }
 
-#redes a {    
+#redes a,
+#redes a:active,
+#redes a:visited {    
     color: rgb(238, 238, 238);
     cursor: pointer;
     transition: all 300ms;
@@ -453,6 +455,18 @@ select:-webkit-autofill:focus {
     
     #header .navbar-brand {
         font-size: 18px;
+    }
+
+}
+
+@media (max-width: 575px){
+    
+    #menu-footer {
+        display: none;
+    }
+
+    #iconos_redes {
+        margin-top: 20px;
     }
 
 }
