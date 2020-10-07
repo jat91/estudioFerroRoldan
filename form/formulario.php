@@ -7,10 +7,7 @@ if (isset($_POST)) {
     $nombreApellido = $_POST['nombreApellido'];
     $email = trim($_POST['email']);
     $mensaje = $_POST['mensaje'];
-
-    // Validación
-
-
+    
     // Envío de mail
     mail("joaquintravia@hotmail.com", "Consulta de " . $email, $mensaje, "From: $email\nContent-Type: text/html; charset=utf-8");
 }

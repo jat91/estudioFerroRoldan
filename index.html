@@ -55,16 +55,16 @@
         <div class="collapse navbar-collapse text-right menu" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" onclick="irA('header')">INICIO</a>
+              <a id="link_inicio" class="nav-link active" onclick="irA('header')">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="irA('servicios')">SERVICIOS</a>
+              <a id="link_servicios" class="nav-link" onclick="irA('servicios')">SERVICIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="irA('nosotros')">NOSOTROS</a>
+              <a id="link_nosotros" class="nav-link" onclick="irA('nosotros')">NOSOTROS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="irA('contacto')">CONTACTO</a>
+              <a id="link_contacto" class="nav-link" onclick="irA('contacto')">CONTACTO</a>
             </li>
           </ul>
         </div>
@@ -189,13 +189,13 @@
     <div class="row col-12 col-sm-12 justify-content-center p-0">
       <form id="formulario_contacto" action="form/formulario.php" method="POST">
         <div class="form-group">
-          <input type="text" name="nombreApellido" class="form-control" placeholder="Nombre y Apellido" />
+          <input type="text" name="nombreApellido" class="form-control" placeholder="Nombre y Apellido" required />
         </div>
         <div class="form-group">
-          <input type="email" name="email" class="form-control" placeholder="Email" />
+          <input type="email" name="email" class="form-control" placeholder="Email" required />
         </div>
         <div class="form-group">
-          <textarea rows="5" name="mensaje" class="form-control" placeholder="Mensaje"></textarea>
+          <textarea rows="5" name="mensaje" class="form-control" placeholder="Mensaje" required></textarea>
         </div>
         <div id="btn_enviar">
           <input type="submit" name="enviar" class="btn btn-success" value="Enviar" />
@@ -207,6 +207,14 @@
 
   <!-- SECTION REDES -->
   <div id="redes" class="row m-0 justify-content-center">
+    <div id="menu-footer" class="row col-12 col-sm-3 justify-content-center">
+      <ul>
+        <li><a onclick="irA('header')">INICIO</a></li>
+        <li><a onclick="irA('servicios')">SERVICIOS</a></li>
+        <li><a onclick="irA('nosotros')">NOSOTROS</a></li>
+        <li><a onclick="irA('contacto')">CONTACTO</a></li>
+      </ul>
+    </div>
     <div class="row col-12 col-sm-3 justify-content-center">
       <ul>
         <li>

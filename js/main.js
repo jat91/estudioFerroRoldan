@@ -8,6 +8,45 @@ $(document).ready(function () {
         zIndex: 3,
         position: 'right'
     });
+
+    // DETECTAR POSICION PARA ACTIVE DE MENU
+    $(window).scroll(function () {
+        var Scroll = $(window).scrollTop() + 1,
+            SectionOneOffset = $('#header').offset().top,
+            SectionTwoOffset = $('#servicios').offset().top-45,
+            SectionThreeOffset = $('#nosotros').offset().top-45,
+            SectionFourOffset = $('#contacto').offset().top-45;
+
+        if (Scroll >= SectionOneOffset) { 
+            $("#link_inicio").addClass("active");
+        } else {
+            $("#link_inicio").removeClass("active");
+        }
+        if (Scroll >= SectionTwoOffset) {
+            $("#link_servicios").addClass("active"); 
+            $("#link_inicio").removeClass("active");
+            $("#link_nosotros").removeClass("active");
+            $("#link_contacto").removeClass("active");
+        } else { 
+            $("#link_servicios").removeClass("active");
+        }
+        if (Scroll >= SectionThreeOffset) {
+            $("#link_nosotros").addClass("active"); 
+            $("#link_inicio").removeClass("active");
+            $("#link_servicios").removeClass("active");
+            $("#link_contacto").removeClass("active");
+        } else { 
+            $("#link_nosotros").removeClass("active");
+        }
+        if (Scroll >= SectionFourOffset) {
+            $("#link_contacto").addClass("active"); 
+            $("#link_inicio").removeClass("active");
+            $("#link_nosotros").removeClass("active");
+            $("#link_servicios").removeClass("active");
+        } else { 
+            $("#link_contacto").removeClass("active");
+        }
+    });
 });
 
 //FUNCION IR A DESDE EL MENU
@@ -25,4 +64,7 @@ function irA(id) {
         top: offsetPosition,
         behavior: 'smooth'
     });
-}
+};
+
+
+
